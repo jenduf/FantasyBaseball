@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E52" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gdX-FU-23Q">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="Dt4-lC-wgE">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9y5-ut-siE" customClass="AuthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HEF-z2-Sk0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="om1-nL-8M5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9y5-ut-siE" id="lvH-H4-Ggb"/>
+                                </connections>
+                            </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your Code: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O6K-aQ-FHj">
+                                <rect key="frame" x="0.0" y="474" width="320" height="94"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.57000000000000006" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="codeLabel" destination="O6K-aQ-FHj" id="Bf7-8Q-sFo"/>
+                        <outlet property="webView" destination="om1-nL-8M5" id="R3X-oi-8OY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zie-hv-us9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="799"/>
+        </scene>
+        <!--My Team View Controller - My Team-->
+        <scene sceneID="qIe-ZF-2e1">
+            <objects>
+                <viewController storyboardIdentifier="MyTeamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N0K-Um-acc" customClass="MyTeamViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dVW-km-xTp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HWb-Qd-Heo">
+                                <rect key="frame" x="20" y="0.0" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Manager Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WQq-zw-DMs">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="4" title="My Team" image="baseball_tab.png" id="WPk-Ak-Ga9"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="managerNameLabel" destination="WQq-zw-DMs" id="Fap-eS-dkN"/>
+                        <outlet property="teamNameLabel" destination="HWb-Qd-Heo" id="Cqm-TN-iiN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZb-dc-PvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="799"/>
+        </scene>
+        <!--Scoreboard View Controller - Scoreboard-->
+        <scene sceneID="wN7-Cg-GdY">
+            <objects>
+                <viewController storyboardIdentifier="ScoreboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oHf-L9-MdQ" customClass="ScoreboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLb-dg-hEg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="2DH-Yi-thP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MatchUpCellIdentifier" id="sYz-BW-0r3" customClass="MatchUpCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1KC-6S-q21">
+                                                    <rect key="frame" x="6" y="7" width="258" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="vs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k6G-d1-hNC">
+                                                    <rect key="frame" x="2" y="39" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hjn-2r-Kg7">
+                                                    <rect key="frame" x="6" y="59" width="258" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yfG-f8-JSb">
+                                                    <rect key="frame" x="290" y="6" width="24" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qVf-zq-y3P">
+                                                    <rect key="frame" x="290" y="60" width="24" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="team1Name" destination="1KC-6S-q21" id="Whi-4U-alw"/>
+                                            <outlet property="team1Score" destination="yfG-f8-JSb" id="CNt-uY-maG"/>
+                                            <outlet property="team2Name" destination="hjn-2r-Kg7" id="gRL-DA-97r"/>
+                                            <outlet property="team2Score" destination="qVf-zq-y3P" id="8qX-kB-1Kb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oHf-L9-MdQ" id="pde-LC-uoC"/>
+                                    <outlet property="delegate" destination="oHf-L9-MdQ" id="T8W-xT-8cE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Scoreboard" image="scoreboard_tab.png" id="tgn-Pd-57d"/>
+                    <connections>
+                        <outlet property="scoreboardTableView" destination="2DH-Yi-thP" id="aLz-ec-Koc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7O-gS-ugH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="146"/>
+        </scene>
+        <!--Home View Controller - Home-->
+        <scene sceneID="1dv-Mo-6Vl">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="saj-fv-0fK" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V20-4x-WcV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_tab.png" id="qth-Xq-BXj"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fug-nt-qjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="146"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BO6-rz-oZt">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="gdX-FU-23Q" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="lF6-9v-dns">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="saj-fv-0fK" kind="relationship" relationship="viewControllers" id="ggW-cc-IfQ"/>
+                        <segue destination="bAl-XV-oXV" kind="relationship" relationship="viewControllers" id="lrt-ta-rkz"/>
+                        <segue destination="IDz-re-D7L" kind="relationship" relationship="viewControllers" id="B3L-ah-Bgx"/>
+                        <segue destination="W9l-PE-pCc" kind="relationship" relationship="viewControllers" id="YIN-5e-02w"/>
+                        <segue destination="oHf-L9-MdQ" kind="relationship" relationship="viewControllers" id="Dn2-Zo-YrU"/>
+                        <segue destination="N0K-Um-acc" kind="relationship" relationship="viewControllers" id="jx7-pC-v87"/>
+                        <segue destination="K1C-PP-8xA" kind="relationship" relationship="viewControllers" id="KVS-vN-SgG"/>
+                        <segue destination="APV-oi-P3G" kind="relationship" relationship="viewControllers" id="iCZ-6Y-Hzl"/>
+                        <segue destination="2fA-rK-vBh" kind="relationship" relationship="viewControllers" id="wqx-ad-2eT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQp-Rx-RFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="799"/>
+        </scene>
+        <!--Stats View Controller - Stats-->
+        <scene sceneID="jhU-Ew-TDL">
+            <objects>
+                <viewController storyboardIdentifier="StatsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="APV-oi-P3G" customClass="StatsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRx-iC-TJh">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="22" sectionHeaderHeight="50" sectionFooterHeight="22" id="Q2c-C0-cWZ">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="separatorColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatsCellIdentifier" id="ycU-yt-CBd" customClass="StatsCell">
+                                        <rect key="frame" x="0.0" y="50" width="568" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nu1-N3-Lmp">
+                                                    <rect key="frame" x="50" y="-1" width="198" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Fh-jW-kKn">
+                                                    <rect key="frame" x="0.0" y="-1" width="50" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483891073956" green="0.1836003934559437" blue="0.32011490758754868" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MNK-sB-Agf">
+                                                    <rect key="frame" x="248" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iTF-21-Aqy">
+                                                    <rect key="frame" x="300" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ffe-cH-HOf">
+                                                    <rect key="frame" x="352" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qod-uB-fbq">
+                                                    <rect key="frame" x="404" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q0j-2s-1ES">
+                                                    <rect key="frame" x="456" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text=".400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8O-k2-SZn">
+                                                    <rect key="frame" x="508" y="0.0" width="60" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.15940483890000001" green="0.18360039349999999" blue="0.3201149076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="atBats" destination="MNK-sB-Agf" id="zlg-eq-z9s"/>
+                                            <outlet property="average" destination="f8O-k2-SZn" id="SAu-vS-8wk"/>
+                                            <outlet property="homeRuns" destination="Ffe-cH-HOf" id="2WZ-gP-w9i"/>
+                                            <outlet property="playerName" destination="Nu1-N3-Lmp" id="TUE-Qw-x9d"/>
+                                            <outlet property="position" destination="1Fh-jW-kKn" id="ULU-aG-TLo"/>
+                                            <outlet property="rbi" destination="Qod-uB-fbq" id="poc-VC-h8g"/>
+                                            <outlet property="runs" destination="iTF-21-Aqy" id="g1u-pe-Bjg"/>
+                                            <outlet property="stolenBases" destination="Q0j-2s-1ES" id="563-6H-3vJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatsAltCellIdentifier" id="Qcu-IK-cFT" customClass="StatsCell">
+                                        <rect key="frame" x="0.0" y="72" width="568" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ahr-BA-h7s">
+                                                    <rect key="frame" x="50" y="-1" width="198" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4sU-t7-0hv">
+                                                    <rect key="frame" x="0.0" y="-1" width="50" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fYe-QC-cJc">
+                                                    <rect key="frame" x="248" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bNO-z7-1qQ">
+                                                    <rect key="frame" x="300" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9zb-Eb-8Sv">
+                                                    <rect key="frame" x="352" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ro-7p-GOd">
+                                                    <rect key="frame" x="404" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TAB-Y2-hy9">
+                                                    <rect key="frame" x="456" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=".400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mnl-HI-m7L">
+                                                    <rect key="frame" x="508" y="0.0" width="60" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75812677854373645" green="0.79556980144005984" blue="0.83867339494163429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="atBats" destination="fYe-QC-cJc" id="4EV-ii-jyn"/>
+                                            <outlet property="average" destination="mnl-HI-m7L" id="qEK-wO-2km"/>
+                                            <outlet property="homeRuns" destination="9zb-Eb-8Sv" id="Shq-6A-OIY"/>
+                                            <outlet property="playerName" destination="Ahr-BA-h7s" id="gmG-4n-SHJ"/>
+                                            <outlet property="position" destination="4sU-t7-0hv" id="SDg-JK-iBX"/>
+                                            <outlet property="rbi" destination="8Ro-7p-GOd" id="F8n-lR-RT2"/>
+                                            <outlet property="runs" destination="bNO-z7-1qQ" id="Exh-4R-tta"/>
+                                            <outlet property="stolenBases" destination="TAB-Y2-hy9" id="leE-EY-ugr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatsPitcherCellIdentifier" id="ZCv-xB-L5R" customClass="StatsCell">
+                                        <rect key="frame" x="0.0" y="94" width="568" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3OL-xr-MnP">
+                                                    <rect key="frame" x="50" y="-1" width="198" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="P" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Xy-Tj-Jen">
+                                                    <rect key="frame" x="0.0" y="-1" width="50" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G7P-lF-UCB">
+                                                    <rect key="frame" x="248" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NOX-ne-QhD">
+                                                    <rect key="frame" x="300" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fR6-9w-TTc">
+                                                    <rect key="frame" x="352" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="adz-7t-JRc">
+                                                    <rect key="frame" x="404" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2.34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4d5-KF-nSn">
+                                                    <rect key="frame" x="456" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1.10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsW-S9-ms9">
+                                                    <rect key="frame" x="508" y="0.0" width="60" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.85727748049999997" green="0.38555090209999998" blue="0.052926871389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="atBats" destination="G7P-lF-UCB" id="Vpm-D1-Lmw"/>
+                                            <outlet property="average" destination="gsW-S9-ms9" id="KPn-Sn-M4z"/>
+                                            <outlet property="era" destination="4d5-KF-nSn" id="aW1-sz-LXo"/>
+                                            <outlet property="homeRuns" destination="fR6-9w-TTc" id="Sq9-YI-n3u"/>
+                                            <outlet property="innings" destination="G7P-lF-UCB" id="a9U-16-dIM"/>
+                                            <outlet property="playerName" destination="3OL-xr-MnP" id="VIX-Yx-9O1"/>
+                                            <outlet property="position" destination="5Xy-Tj-Jen" id="MyK-Zq-086"/>
+                                            <outlet property="rbi" destination="adz-7t-JRc" id="izt-yr-ZZi"/>
+                                            <outlet property="runs" destination="NOX-ne-QhD" id="SF7-G7-V2u"/>
+                                            <outlet property="saves" destination="fR6-9w-TTc" id="yFY-1E-k5D"/>
+                                            <outlet property="stolenBases" destination="4d5-KF-nSn" id="rmt-Gr-Mdy"/>
+                                            <outlet property="strikeouts" destination="adz-7t-JRc" id="QMb-5U-ivk"/>
+                                            <outlet property="whip" destination="gsW-S9-ms9" id="6WE-R8-3Up"/>
+                                            <outlet property="wins" destination="NOX-ne-QhD" id="VoG-tD-Is1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatsPitcherAltCellIdentifier" id="APC-nN-sPE" customClass="StatsCell">
+                                        <rect key="frame" x="0.0" y="116" width="568" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8v7-be-fzJ">
+                                                    <rect key="frame" x="50" y="-1" width="198" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="P" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ffu-qb-Cq1">
+                                                    <rect key="frame" x="0.0" y="-1" width="50" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="6.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhB-6q-FlU">
+                                                    <rect key="frame" x="248" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Icr-tt-jH0">
+                                                    <rect key="frame" x="300" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LeN-E1-QQf">
+                                                    <rect key="frame" x="352" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZFK-mS-WdL">
+                                                    <rect key="frame" x="404" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2.34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LDX-Sh-RSL">
+                                                    <rect key="frame" x="456" y="0.0" width="52" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1.10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z8b-zf-biy">
+                                                    <rect key="frame" x="508" y="0.0" width="60" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.88369406610000001" green="0.76989685870000002" blue="0.181365953" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="atBats" destination="xhB-6q-FlU" id="2fC-Je-PRc"/>
+                                            <outlet property="average" destination="Z8b-zf-biy" id="Naa-WJ-YCK"/>
+                                            <outlet property="era" destination="LDX-Sh-RSL" id="y1D-pr-Asu"/>
+                                            <outlet property="homeRuns" destination="LeN-E1-QQf" id="His-2w-Efy"/>
+                                            <outlet property="innings" destination="xhB-6q-FlU" id="bAw-JB-r8P"/>
+                                            <outlet property="playerName" destination="8v7-be-fzJ" id="2XA-Fq-JT9"/>
+                                            <outlet property="position" destination="Ffu-qb-Cq1" id="lrC-eU-nTQ"/>
+                                            <outlet property="rbi" destination="ZFK-mS-WdL" id="GNH-Mu-E5g"/>
+                                            <outlet property="runs" destination="Icr-tt-jH0" id="paB-PF-P8j"/>
+                                            <outlet property="saves" destination="LeN-E1-QQf" id="FMM-d7-6mR"/>
+                                            <outlet property="stolenBases" destination="LDX-Sh-RSL" id="Vac-rC-GrY"/>
+                                            <outlet property="strikeouts" destination="ZFK-mS-WdL" id="jBq-iT-GeY"/>
+                                            <outlet property="whip" destination="Z8b-zf-biy" id="kFl-s5-dht"/>
+                                            <outlet property="wins" destination="Icr-tt-jH0" id="FZQ-xg-Eia"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="APV-oi-P3G" id="mgg-mg-556"/>
+                                    <outlet property="delegate" destination="APV-oi-P3G" id="L69-5x-HRI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Stats" image="stats_tab.png" id="GyD-dt-Yhn"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="statsTableView" destination="Q2c-C0-cWZ" id="4SM-25-MEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sW-bE-Sp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="2191"/>
+        </scene>
+        <!--My Roster View Controller - My Roster-->
+        <scene sceneID="O32-eP-1FC">
+            <objects>
+                <viewController storyboardIdentifier="MyRosterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K1C-PP-8xA" customClass="MyRosterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L1E-5l-O0R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="120" sectionHeaderHeight="10" sectionFooterHeight="10" id="OFr-7l-UCg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.77406067607003892" green="0.77406067607003892" blue="0.77406067607003892" alpha="0.69000000000000006" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCellIdentifier" id="mit-Jq-POh" customClass="PlayerCell">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="jj4-L9-dMP" customClass="CircleView">
+                                                    <rect key="frame" x="272" y="70" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.2569991848" blue="0.8019401665" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iW0-Fo-b5c">
+                                                    <rect key="frame" x="5" y="69" width="241" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044747081714" green="0.54043044747081714" blue="0.54043044747081714" alpha="0.69000000000000006" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZRI-oc-6l3">
+                                                    <rect key="frame" x="5" y="90" width="107" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="T74-W2-8XI">
+                                                    <rect key="frame" x="5" y="6" width="46" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Aqs-rK-nhO">
+                                                    <rect key="frame" x="59" y="6" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" backgroundImage="news_icon_0.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Texas Rangers" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tnY-T1-8um">
+                                                    <rect key="frame" x="141" y="90" width="151" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="lock.png" id="JQh-Xv-J3a">
+                                                    <rect key="frame" x="271" y="6" width="21" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="headshotImageView" destination="T74-W2-8XI" id="LMo-9r-273"/>
+                                            <outlet property="lockImageView" destination="JQh-Xv-J3a" id="dzg-lY-x6T"/>
+                                            <outlet property="newsButton" destination="Aqs-rK-nhO" id="e8u-UH-toT"/>
+                                            <outlet property="playerName" destination="iW0-Fo-b5c" id="U3N-ly-bwN"/>
+                                            <outlet property="position" destination="ZRI-oc-6l3" id="9bQ-P2-KBE"/>
+                                            <outlet property="statusView" destination="jj4-L9-dMP" id="5wk-Q4-RbB"/>
+                                            <outlet property="teamName" destination="tnY-T1-8um" id="W5O-09-gHj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="K1C-PP-8xA" id="xeC-HV-VV0"/>
+                                    <outlet property="delegate" destination="K1C-PP-8xA" id="Wzh-d9-7hS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="5" title="My Roster" image="roster_tab.png" id="eu5-1a-jef"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="rosterTableView" destination="OFr-7l-UCg" id="05D-ym-Roq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUL-fZ-jOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="799"/>
+        </scene>
+        <!--Teams View Controller - Teams-->
+        <scene sceneID="VXI-Cu-D48">
+            <objects>
+                <viewController storyboardIdentifier="TeamsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IDz-re-D7L" customClass="TeamsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CbE-Bx-37T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Teams" image="team_tab.png" id="qTP-j0-rJt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmW-rc-wo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="1457"/>
+        </scene>
+        <!--Players View Controller - Players-->
+        <scene sceneID="REw-Vm-GSi">
+            <objects>
+                <viewController storyboardIdentifier="PlayersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2fA-rK-vBh" customClass="PlayersViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NHQ-h2-BM8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="120" sectionHeaderHeight="10" sectionFooterHeight="10" id="lvU-fA-LoT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.77406067609999996" green="0.77406067609999996" blue="0.77406067609999996" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCellIdentifier" id="21S-fk-OK3" customClass="PlayerCell">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xad-pd-chQ">
+                                                    <rect key="frame" x="5" y="69" width="241" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lin-Ll-xyn">
+                                                    <rect key="frame" x="5" y="90" width="107" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hYB-5e-gFl">
+                                                    <rect key="frame" x="5" y="6" width="46" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZjY-2J-9Lv">
+                                                    <rect key="frame" x="59" y="6" width="26" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" backgroundImage="news_icon_0.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Texas Rangers" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bel-Wg-CX1">
+                                                    <rect key="frame" x="141" y="90" width="151" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="lock.png" id="REN-Nu-svr">
+                                                    <rect key="frame" x="271" y="6" width="21" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="headshotImageView" destination="hYB-5e-gFl" id="fyW-jE-LqG"/>
+                                            <outlet property="lockImageView" destination="REN-Nu-svr" id="SzZ-M8-yO9"/>
+                                            <outlet property="newsButton" destination="ZjY-2J-9Lv" id="wR5-xk-yzZ"/>
+                                            <outlet property="playerName" destination="xad-pd-chQ" id="UcB-sK-Omt"/>
+                                            <outlet property="position" destination="Lin-Ll-xyn" id="YNN-ld-lo6"/>
+                                            <outlet property="teamName" destination="bel-Wg-CX1" id="7Fj-HL-pg8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2fA-rK-vBh" id="kfo-Tx-7GV"/>
+                                    <outlet property="delegate" destination="2fA-rK-vBh" id="lKt-DB-E8a"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Players" image="players_icon.png" id="BrU-wJ-fCi"/>
+                    <connections>
+                        <outlet property="playerTableView" destination="lvU-fA-LoT" id="BWF-Fv-8Vi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3o-gn-lTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="1457"/>
+        </scene>
+        <!--League View Controller - League-->
+        <scene sceneID="y5i-dZ-cKh">
+            <objects>
+                <viewController storyboardIdentifier="LeagueViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bAl-XV-oXV" customClass="LeagueViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spw-y7-run">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="League" image="baseball_ball_tab.png" id="cEX-vm-VL4"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbU-e2-pab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="1457"/>
+        </scene>
+        <!--Standings View Controller - Standings-->
+        <scene sceneID="MUE-rc-hA5">
+            <objects>
+                <viewController storyboardIdentifier="StandingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W9l-PE-pCc" customClass="StandingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z3E-do-Gfg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="7Ob-eE-FCC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StandingsCellIdentifier" id="us9-8o-ejC" customClass="StandingsCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tzf-MX-nce">
+                                                    <rect key="frame" x="42" y="9" width="263" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XGY-Jx-o3P">
+                                                    <rect key="frame" x="9" y="6" width="22" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1 - 1 - 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lHe-Io-JhY">
+                                                    <rect key="frame" x="42" y="39" width="125" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4 Games Back" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0KZ-mY-HhW">
+                                                    <rect key="frame" x="180" y="39" width="125" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="shadowColor" red="0.54043044750000002" green="0.54043044750000002" blue="0.54043044750000002" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="gamesBack" destination="0KZ-mY-HhW" id="FDJ-dG-Nc8"/>
+                                            <outlet property="teamName" destination="Tzf-MX-nce" id="9UZ-co-sH6"/>
+                                            <outlet property="teamRank" destination="XGY-Jx-o3P" id="gCi-RU-wgk"/>
+                                            <outlet property="teamRecord" destination="lHe-Io-JhY" id="pjg-iu-YCK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="W9l-PE-pCc" id="55J-Jv-JVt"/>
+                                    <outlet property="delegate" destination="W9l-PE-pCc" id="xsi-ks-mDj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Standings" image="standings_tab.png" id="bBZ-1d-iSZ"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="standingsTableView" destination="7Ob-eE-FCC" id="ukW-Ul-S5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tba-5m-vbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="1457"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseball_ball_tab.png" width="28" height="27"/>
+        <image name="baseball_tab.png" width="25" height="26"/>
+        <image name="home_tab.png" width="27" height="26"/>
+        <image name="lock.png" width="21" height="27"/>
+        <image name="news_icon_0.png" width="40" height="40"/>
+        <image name="players_icon.png" width="17" height="30"/>
+        <image name="roster_tab.png" width="27" height="28"/>
+        <image name="scoreboard_tab.png" width="27" height="27"/>
+        <image name="standings_tab.png" width="28" height="22"/>
+        <image name="stats_tab.png" width="26" height="26"/>
+        <image name="team_tab.png" width="24" height="17"/>
+    </resources>
+    <classes>
+        <class className="AuthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuthViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="codeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="CircleView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CircleView.h"/>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="LeagueViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeagueViewController.h"/>
+        </class>
+        <class className="MatchUpCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MatchUpCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="team1Name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1Score" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2Name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2Score" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyRosterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyRosterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="rosterTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MyTeamViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyTeamViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="managerNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PlayerCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayerCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headshotImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lockImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="newsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playerName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="position" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusView" candidateClass="CircleView"/>
+                <relationship kind="outlet" name="teamName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PlayersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="playerTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ScoreboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreboardViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scoreboardTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="StandingsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StandingsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="gamesBack" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamRank" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamRecord" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="StandingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StandingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="standingsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="StatsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="atBats" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="average" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="era" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="homeRuns" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="innings" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playerName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="position" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rbi" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="runs" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="saves" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="stolenBases" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="strikeouts" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="whip" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="wins" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="StatsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="statsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="TeamsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamsViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
